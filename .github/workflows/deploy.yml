@@ -41,6 +41,8 @@ jobs:
 
       - name: 配置 GitHub Pages
         uses: actions/configure-pages@v4
+        with:
+          enablement: true # 加上这行代码，赋予脚本强行开启网页的权限
 
       - name: 上传打包产物 (dist)
         uses: actions/upload-pages-artifact@v3
