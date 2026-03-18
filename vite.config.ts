@@ -3,8 +3,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
-  // 这里的名字必须和你的 GitHub 仓库名字一模一样，前后都要有斜杠！
-  base: '/resume/', 
+  base: '/', 
   plugins: [
     vue(),
   ],
