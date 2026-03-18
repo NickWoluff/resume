@@ -1,0 +1,176 @@
+/* 全局基础设置 */
+body {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  /* 确保 body 至少占满全屏，方便伪元素定位 */
+  min-height: 100vh; 
+  position: relative;
+}
+
+/* 专门用来承载背景图片的伪元素 */
+body::before {
+  content: "";
+  /* 这里的图片地址就是你原先的背景图 */
+  background: url('https://img.z4a.net/images/2025/07/30/background.png') center/cover fixed no-repeat;
+  opacity: 0.9; 
+  
+  /* 铺满整个屏幕 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  /* 确保背景图在所有内容（包括毛玻璃卡片）的最底层 */
+  z-index: -2; 
+}
+
+/* 简历主容器：毛玻璃卡片效果 */
+.resume-container {
+  max-width: 900px; /* 限制最大宽度，让排版像 A4 纸 */
+  margin: 40px auto; /* 居中并上下留白 */
+  padding: 40px 50px;
+  font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.resume-container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.75); /* 稍微调高了不透明度，保证文字清晰可读 */
+  border-radius: 12px;
+  backdrop-filter: blur(12px);
+  pointer-events: none;
+  z-index: -1;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* 链接样式 */
+a {
+  color: #145f74;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* 头部排版 */
+.resume-header {
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #314243;
+  padding-bottom: 20px;
+}
+.resume-header h1 {
+  font-size: 36px;
+  margin: 0 0 10px 0;
+  color: #314243;
+}
+.contact-info {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 15px;
+}
+.intent-box {
+  background: rgba(49, 66, 67, 0.1);
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: inline-block;
+  text-align: left;
+  font-size: 14px;
+}
+.intent-box p {
+  margin: 5px 0;
+}
+
+/* 各大板块排版 */
+.resume-section {
+  margin-bottom: 30px;
+}
+.resume-section h2 {
+  font-size: 22px;
+  color: #314243;
+  border-left: 5px solid #314243;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+/* 弹性布局：用于将名字和时间分列左右 */
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.section-content p {
+  margin: 5px 0;
+  font-size: 15px;
+}
+
+/* 列表样式 */
+.skills-list {
+  padding-left: 20px;
+  margin: 0;
+}
+.skills-list li {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+/* 项目经历细化 */
+.project-item {
+  margin-bottom: 25px;
+}
+.project-role {
+  font-style: italic;
+  color: #666;
+  margin: 0 0 8px 0;
+  font-size: 14px;
+}
+.project-item p {
+  margin: 5px 0;
+  font-size: 15px;
+}
+.project-item ul {
+  padding-left: 20px;
+  margin-top: 5px;
+}
+.project-item li {
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+/* 专门用于打印和导出 PDF 的样式 */
+@media print {
+  body {
+    background: none; /* 移除背景图 */
+    color: #000; /* 纯黑字体更清晰 */
+  }
+  
+  .resume-container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    box-shadow: none; /* 移除阴影 */
+  }
+
+  .resume-container:before {
+    display: none; /* 移除毛玻璃背景 */
+  }
+
+  a {
+    text-decoration: none;
+    color: #000; /* 链接也变成黑色，避免打印出奇怪的蓝色 */
+  }
+}
