@@ -28,7 +28,7 @@
     <section class="resume-section">
       <h2>🛠️ 专业技能</h2>
       <ul class="skills-list">
-        <li><strong>编程语言：</strong> 熟悉 Java，掌握面向对象编程思想；了解 C 语言与底层内存分配机制。</li>
+        <li><strong>编程语言：</strong> 熟悉 Java，掌握面向对象编程思想；了解 C 语言与底层内存分配机制；熟练 Python 语法与程序开发。</li>
         <li><strong>后端/Web技术：</strong> 熟悉 Spring Boot 框架；熟悉 HTML/CSS/JavaScript 等前端基础开发技术。</li>
         <li><strong>网络与底层：</strong> 深入理解 TCP/IP 协议栈，熟悉 HTTP/HTTPS 工作原理；掌握 Socket 网络编程模型；熟练使用 Wireshark 进行流量抓包与协议分析。</li>
         <li><strong>系统与工具：</strong> 熟悉 Linux 常用命令与基本系统管理；掌握 Git 版本控制；熟悉 MySQL 数据库基本操作与 SQL 语句编写。</li>
@@ -43,7 +43,7 @@
       <div class="project-item">
         <div class="flex-between">
           <strong>项目一：基于大语言模型（LLM）的 AstrBot 机器人插件生态开发</strong>
-          <span>2025.xx - 至今</span>
+          <span>2025.12 - 至今</span>
         </div>
         <p class="project-role">核心开发者 / 开源贡献者</p>
         <p><strong>项目描述：</strong> 深度参与开源 LLM 聊天机器人框架 AstrBot 的生态建设，独立开发并上架核心增强插件，同时作为核心 Contributor 参与多个热门社区插件的迭代维护。</p>
