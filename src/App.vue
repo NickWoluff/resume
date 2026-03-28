@@ -8,7 +8,7 @@
         🐙 GitHub：<a href="https://github.com/NickWoluff" target="_blank">NickWoluff</a>
       </p>
       <div class="intent-box">
-        <p><strong>🎓 求职意向：</strong> 后端开发实习生 / 安全研发实习生</p>
+        <p><strong>🎓 求职意向：</strong> 前端开发实习生 / 后端开发实习生 / 安全研发实习生</p>
         <p><strong>⏳ 到岗时间：</strong> 2026年5月初，每周可实习 4-5 天，可实习 3 个月以上</p>
       </div>
     </header>
@@ -57,7 +57,7 @@
 
       <div class="project-item">
         <div class="flex-between">
-          <strong>项目二：高并发网络通讯与大文件传输系统</strong>
+          <strong>项目二：即时通讯应用与文件传输系统</strong>
           <span>大二核心项目</span>
         </div>
         <p class="project-role">独立开发</p>
@@ -73,7 +73,7 @@
 
       <div class="project-item">
         <div class="flex-between">
-          <strong>项目三：《逃离鸭科夫》游戏存档解析与修改器 (Save Editor)</strong>
+          <strong>项目三：《逃离鸭科夫》游戏存档解析编辑器</strong>
           <span><a href="https://github.com/NickWoluff/DuckovSaveEditor" target="_blank">查看 GitHub</a></span>
         </div>
         <p class="project-role">个人独立项目</p>
