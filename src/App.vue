@@ -57,23 +57,7 @@
 
       <div class="project-item">
         <div class="flex-between">
-          <strong>项目二：即时通讯应用与文件传输系统</strong>
-          <span>大二核心项目</span>
-        </div>
-        <p class="project-role">独立开发</p>
-        <p><strong>项目描述：</strong> 抛弃传统 HTTP 协议，基于自底向上的设计思路，从零使用 Java Sockets 底层 API 实现的 C/S 架构即时通讯与文件分发服务器。</p>
-        <p><strong>技术栈：</strong> Java / Socket 网络编程 / 多线程并发 / 自定义协议</p>
-        <p><strong>核心工作：</strong></p>
-        <ul>
-          <li><strong>网络协议设计：</strong> 为解决 TCP 粘包/半包问题，自定义了应用层通信报文协议（Header+Body），实现消息广播、群聊与私聊的精准路由。</li>
-          <li><strong>多线程与并发控制：</strong> 服务端采用线程池技术接管客户端连接，保障多用户在线时的稳定消息接收、处理与分发。</li>
-          <li><strong>可靠文件传输：</strong> 基于文件流分块读取与校验机制，实现了大文件的可靠传输与断点续传功能，并在服务端实现了基于角色的权限管控体系。</li>
-        </ul>
-      </div>
-
-      <div class="project-item">
-        <div class="flex-between">
-          <strong>项目三：《逃离鸭科夫》游戏存档解析编辑器</strong>
+          <strong>项目二：《逃离鸭科夫》游戏存档解析编辑器</strong>
           <span><a href="https://github.com/NickWoluff/DuckovSaveEditor" target="_blank">查看 GitHub</a></span>
         </div>
         <p class="project-role">个人独立项目</p>
@@ -87,10 +71,42 @@
         </ul>
       </div>
 
+            <div class="project-item">
+        <div class="flex-between">
+          <strong>项目三：高校学科竞赛管理系统</strong>
+          <span>2025.9 - 2026.1</span>
+        </div>
+        <p class="project-role">大二核心项目 项目组长 / 全栈开发</p>
+        <p><strong>项目描述：</strong> 针对高校学科竞赛管理中信息分散、流程繁琐等痛点，主导设计并实现了一套基于 B/S 架构的综合管理平台，实现了从赛事发布、报名组队到证书审核的竞赛全生命周期数字化与自动化闭环。</p>
+        <p><strong>技术栈：</strong> Java / Spring Boot / Vue / MySQL / 前后端分离架构</p>
+        <p><strong>核心工作：</strong></p>
+        <ul>
+          <li><strong>系统架构设计与核心业务链开发：</strong> 统筹开发团队把控项目进度，采用 Spring Boot 作为后端引擎结合 Vue 前端框架，构建了高交互性的单页应用（SPA）。主导实现了学生端在规定时间内的自主报名、动态灵活组队，以及教师端赛项参数配置、队伍人员审核与证书统计报表导出等核心业务逻辑。</li>
+          <li><strong>数据库规范化建模与结构设计：</strong> 负责系统底层数据存储方案的统筹设计，基于业务生命周期绘制 E-R 实体联系图。在 MySQL 中设计并落地了包含用户身份、竞赛元数据、动态团队关系、审核记录等在内的多张强关联数据表，通过合理的主外键约束有效保障了复杂业务流下数据的一致性与完整性。</li>
+          <li><strong>权限管控与安全机制落地：</strong> 设计并实现了基于角色（学生/教师双重身份）的精细化访问控制与权限隔离体系，确保不同工作流边界清晰、越权访问受限。并在底层将用户登录凭证等核心敏感信息采用 BCrypt 算法进行单向加密存储，从架构逻辑与数据固化双重维度提升了系统的安全性与可靠性。</li>
+        </ul>
+      </div>
+
       <div class="project-item">
         <div class="flex-between">
-          <strong>项目四：个人多功能 Web 站点与沉浸式前端阅读器</strong>
-          <span>独立开发</span>
+          <strong>项目四：即时通讯应用与文件传输系统</strong>
+          <span>2025.3 - 2025.6</span>
+        </div>
+        <p class="project-role">大二核心项目 独立开发</p>
+        <p><strong>项目描述：</strong> 抛弃传统 HTTP 协议，基于自底向上的设计思路，从零使用 Java Sockets 底层 API 实现的 C/S 架构即时通讯与文件分发服务器。</p>
+        <p><strong>技术栈：</strong> Java / Socket 网络编程 / 多线程并发 / 自定义协议</p>
+        <p><strong>核心工作：</strong></p>
+        <ul>
+          <li><strong>网络协议设计：</strong> 为解决 TCP 粘包/半包问题，自定义了应用层通信报文协议（Header+Body），实现消息广播、群聊与私聊的精准路由。</li>
+          <li><strong>多线程与并发控制：</strong> 服务端采用线程池技术接管客户端连接，保障多用户在线时的稳定消息接收、处理与分发。</li>
+          <li><strong>可靠文件传输：</strong> 基于文件流分块读取与校验机制，实现了大文件的可靠传输与断点续传功能，并在服务端实现了基于角色的权限管控体系。</li>
+        </ul>
+      </div>
+
+      <div class="project-item">
+        <div class="flex-between">
+          <strong>项目五：个人多功能 Web 站点与沉浸式前端阅读器</strong>
+          <span>2023.09 - 至今</span>
         </div>
         <p class="project-role">个人独立项目</p>
         <p><strong>项目描述：</strong> 独立设计与开发集个人门户、实用工具箱与原创文学于一体的综合性 Web 站点，并独立实现站点的无服务器架构与全球化部署。</p>
